@@ -1,0 +1,32 @@
+{
+  "tests": [
+    {
+      "name": "Section A — Code runs correctly (25 pts)",
+      "setup": "pip install pytest matplotlib --quiet",
+      "run": "pytest tests/test_assignment1.py::TestCodeRuns -v",
+      "timeout": 120,
+      "points": 25
+    },
+    {
+      "name": "Section B — All 4 plot files exist (25 pts)",
+      "setup": "",
+      "run": "pytest tests/test_assignment1.py::TestPlotsExist -v",
+      "timeout": 30,
+      "points": 25
+    },
+    {
+      "name": "Section C — README observations filled in (35 pts)",
+      "setup": "",
+      "run": "pytest tests/test_assignment1.py::TestREADME -v",
+      "timeout": 30,
+      "points": 35
+    },
+    {
+      "name": "Section D — Code modified for both experiments (15 pts)",
+      "setup": "",
+      "run": "pytest tests/test_assignment1.py::TestCodeModified -v",
+      "timeout": 30,
+      "points": 15
+    }
+  ]
+}
